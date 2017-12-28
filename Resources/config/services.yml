@@ -1,0 +1,5 @@
+services:
+    slitesystems.imap:
+        class: SliteSystems\ImapBundle\Service\Imap
+        arguments: [ "%slitesystems.imap.connections%" ]
+        public: false
