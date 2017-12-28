@@ -28,7 +28,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('slitesystems_imap');
+        $rootNode = $treeBuilder->root('slite_systems_imap');
         
         $rootNode
             ->children()
@@ -65,5 +65,7 @@ class Configuration implements ConfigurationInterface
                 ->end()
             ->end()
         ;
+
+        return treeBuilder;
     }
 }
