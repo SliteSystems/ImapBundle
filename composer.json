@@ -10,11 +10,17 @@
         }
     ],
     "require": {
-        "ddeboer/imap": "^1.1",
+        "ddeboer/imap": "dev-OR_Conditions",
         "symfony/framework-bundle": "~2.8|~3.0|~4.0",
         "symfony/dependency-injection": "~2.8|~3.0|~4.0"
     },
     "autoload": {
         "psr-4": { "SliteSystems\\ImapBundle\\": "" }
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/SliteSystems/imap"
+        }
+    ]
 }
